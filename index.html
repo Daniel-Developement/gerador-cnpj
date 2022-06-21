@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/style.css">
+    <title>Gerador de cnpj</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Gerador de CNPJ</h1>
+        </div>
+            <form name="form_main" class="form">
+                <label for="numero">Número:</label>
+                <input name="numero" id="numero" size="20" type="text" readonly>
+
+                <div class="seleted">
+                    <label for="mascara">Máscara</label>
+                    <input name="mascara" value="mascara" id="mascara" type="checkbox">
+                </div>
+
+                <button name="button" value="Gerar" onclick="gera()" type="button">Gerar</button>
+            </form>
+        </div>
+    </div>
+    <script src="app/js/script.js"></script>
+</body>
+
+</html>
